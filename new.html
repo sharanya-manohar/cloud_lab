@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WanderNotes - A Travel Blog</title>
+  <style>
+    /* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body */
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f7faf7;
+  color: #333;
+  line-height: 1.7;
+}
+
+/* Hero */
+.hero {
+  background-image: url('https://www.tokopie.com/cdn/shop/files/Header_tokopie_test_1_turbo_1600x.png?v=1613746799');
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  text-align: center;
+  color: #fff;
+  text-shadow: 2px 2px 4px #000;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  margin-bottom: 10px;
+  font-family: 'Brush Script MT', cursive;
+}
+
+.hero p {
+  font-size: 1.3rem;
+}
+
+/* Navigation */
+nav {
+  background-color: #d6e8d3;
+  border-top: 1px solid #c4d7c5;
+  border-bottom: 1px solid #c4d7c5;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 15px 0;
+}
+
+nav ul li {
+  margin: 0 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #2e3b2f;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #557c55;
+}
+
+/* Layout */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  padding: 30px;
+}
+
+/* Main content */
+main {
+  flex: 3;
+}
+
+/* Blog post styles */
+.post {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  transition: transform 0.2s;
+}
+
+.post:hover {
+  transform: translateY(-5px);
+}
+
+.post img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post h2 {
+  font-size: 1.8rem;
+  margin: 20px;
+  color: #2f4f2f;
+}
+
+.post .date {
+  margin: 0 20px;
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.post p {
+  margin: 10px 20px 20px 20px;
+}
+
+.read-more {
+  display: inline-block;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  color: #557c55;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.read-more:hover {
+  text-decoration: underline;
+}
+
+/* Sidebar */
+aside {
+  flex: 1;
+}
+
+.about-me {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.about-me img {
+  border-radius: 50%;
+  margin-bottom: 15px;
+}
+
+.about-me h3 {
+  margin-bottom: 10px;
+  color: #3a5a40;
+}
+
+.subscribe {
+  margin-top: 30px;
+  background-color: #e6f2e1;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.subscribe input[type="email"] {
+  padding: 10px;
+  width: 80%;
+  border: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  background-color: #f2f8f0;
+}
+
+.subscribe button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #557c55;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.subscribe button:hover {
+  background-color: #446b44;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #d6e8d3;
+  color: #2e3b2f;
+  margin-top: 40px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe input[type="email"] {
+    width: 100%;
+  }
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <div class="hero">
+      <h1>WanderNotes</h1>
+      <p>Wandering the world, one story at a time ✈️</p>
+    </div>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Gallery</a></li>
+      <li><a href="#">About</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <main>
+      <article class="post">
+        <img src="https://petapixel.com/assets/uploads/2016/09/Golden-Lake-800x400.jpg" alt="Mountain Adventure">
+        <h2>Chasing Sunrises in the Swiss Alps</h2>
+        <p class="date">August 10, 2025</p>
+        <p>
+          Woke up at 4 a.m. to hike up to the ridge near Lake Oeschinen — and let me tell you, the sky turning pink over snow-covered peaks was something I’ll never forget. Here's how I got there, and why you should do it too...
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+
+      <article class="post">
+        <img src="https://static.vecteezy.com/system/resources/thumbnails/029/089/790/small_2x/generative-ai-night-scene-of-big-tokyo-city-in-cyberpunk-style-futuristic-nostalgic-80s-90s-neon-lights-vibrant-colorsrealistic-horizontal-illustration-photo.jpg" alt="Tokyo Nights">
+        <h2>Tokyo Diaries: Lost in Neon</h2>
+        <p class="date">July 26, 2025</p>
+        <p>
+          There's something magical about getting lost in Tokyo’s back alleys after sunset. The glowing vending machines, the quiet hum of the city, the ramen shops hidden in plain sight...
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+
+      <article class="post">
+        <img src="https://www.shutterstock.com/image-photo/merzougamorocco-6-january-2024-caravan-600nw-2493751419.jpg" alt="Morocco Desert" height="400" width="800">
+        <h2>Sleeping Under the Stars in the Sahara</h2>
+        <p class="date">June 15, 2025</p>
+        <p>
+          Riding camels through golden dunes and sleeping under a sky filled with stars — Morocco's desert was like stepping into a dream. Here's my journey through Merzouga...
+        </p>
+        <a href="#" class="read-more">Read more →</a>
+      </article>
+    </main>
+
+    <aside>
+      <div class="about-me">
+        <img src="https://img.freepik.com/premium-vector/acupuncturist-vector-character-illustration-flat-style_1033579-56613.jpg" alt="About Me" height="150" width="150">
+        <h3>Hi, I'm Sharanya 🌍</h3>
+        <p>
+          Writer, explorer, and lover of slow travel. I started this blog to document the beautiful, chaotic, and unexpected moments of my journeys. Welcome to my world!
+        </p>
+      </div>
+
+      <div class="subscribe">
+        <h4>📬 Subscribe for updates</h4>
+        <input type="email" placeholder="Your email">
+        <button>Subscribe</button>
+      </div>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 WanderNotes. Made with ❤️ and Wi-Fi from cafés around the world.</p>
+  </footer>
+</body>
+</html>
